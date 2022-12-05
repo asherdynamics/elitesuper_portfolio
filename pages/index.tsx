@@ -21,7 +21,6 @@ export default function Home() {
         <div className='w-full mt-2'>
           <h1 className="text-5xl text-center font-bold">Hi! 👋 I'm <span className='text-yellow-300'>{name}</span>.</h1>
           <h1 className="text-2xl text-center font-bold mt-1">{shortBio}</h1>
-
         </div>
         <div className='w-full mt-2 flex justify-center font-mono'>
           <button className='w-36 py-1 px-2 m-2 border border-2 hover:border-indigo-600  rounded-lg uppercase text-2xl font-bold hover:text-indigo-600'>Intro</button>
