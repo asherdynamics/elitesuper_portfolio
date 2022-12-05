@@ -1,10 +1,19 @@
 import React, { ReactElement } from "react";
 import Portfolio from "../../layouts/Portfolio";
+import type { NextPageWithLayout } from '../_app'
 
-export default function Intro(){
+const Intro:NextPageWithLayout = () => {
     return(<>
     This is Intro Page
     </>)
 }
+Intro.getLayout = function getLayout(page: ReactElement) {
+    return (
+      <Portfolio>
+        {page}
+      </Portfolio>
+    )
+  }
 
-Intro.layout = Portfolio;
+export default Intro;
+
