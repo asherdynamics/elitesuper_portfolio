@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes, { InferProps } from "prop-types";
-import DefaultNavbar from "../components/Navbar/defaultnavbar";
+import DefaultNavbar from "../components/Navbar/DefaultNavbar";
 
 
 export default function Portfolio({children}:InferProps<typeof Portfolio.propTypes>){

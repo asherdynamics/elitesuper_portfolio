@@ -19,7 +19,7 @@ export default function Home() {
           Welcome to <span className='text-green-500'>My Portfolio</span>
         </h1>
         <div className='w-full mt-2'>
-          <h1 className="text-5xl text-center font-bold">Hi! 👋 I'm <span className='text-yellow-300'>{name}</span>.</h1>
+          <h1 className="text-5xl text-center font-bold">Hi! 👋 I am <span className='text-yellow-300'>{name}</span>.</h1>
           <h1 className="text-2xl text-center font-bold mt-1">{shortBio}</h1>
         </div>
         <div className='w-full mt-2 flex justify-center font-mono'>
