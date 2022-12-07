@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { ParticlesContainer } from '../components/particles/ParticlesContainer'
 import styles from '../styles/Home.module.css'
 
@@ -22,10 +23,10 @@ export default function Home() {
           <h1 className="text-5xl text-center font-bold">Hi! 👋 I am <span className='text-yellow-300'>{name}</span>.</h1>
           <h1 className="text-2xl text-center font-bold mt-1">{shortBio}</h1>
         </div>
-        <div className='w-full mt-2 flex justify-center font-mono'>
-          <button className='w-36 py-1 px-2 m-2 border border-2 hover:border-indigo-600  rounded-lg uppercase text-2xl font-bold hover:text-indigo-600'>Intro</button>
-          <button className='w-36 py-1 px-2 m-2 border border-2 hover:border-indigo-600 rounded-lg uppercase text-2xl font-bold hover:text-indigo-600'>My Work</button>
-          <button className='w-36 py-1 px-2 m-2 border border-2 hover:border-indigo-600 rounded-lg uppercase text-2xl font-bold hover:text-indigo-600'>Contact</button>
+        <div className='w-full mt-2 inline-block md:flex justify-center text-center font-mono'>
+          <button className='w-5/6 md:w-36 py-1 px-2 m-auto my-2 md:m-2 border border-2 hover:border-indigo-600  rounded-lg uppercase text-2xl font-bold hover:text-indigo-600'><Link href="/portfolio/intro" >Intro</Link></button>
+          <button className='w-5/6 md:w-36 py-1 px-2 m-auto my-2 md:m-2 border border-2 hover:border-indigo-600  rounded-lg uppercase text-2xl font-bold hover:text-indigo-600'><Link href="/portfolio/mywork" >My Work</Link></button>
+          <button className='w-5/6 md:w-36 py-1 px-2 m-auto my-2 md:m-2 border border-2 hover:border-indigo-600  rounded-lg uppercase text-2xl font-bold hover:text-indigo-600'><Link href="/portfolio/contact" >Contact</Link></button>
         </div>
         <ParticlesContainer/>
       </main>
