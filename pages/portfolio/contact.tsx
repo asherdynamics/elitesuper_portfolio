@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ReactElement} from "react";
 
 import Portfolio from "../../layouts/Portfolio";
 
@@ -10,4 +10,10 @@ export default function Contact(){
 
 }
 
-Contact.layout = Portfolio;
+Contact.getLayout = function getLayout(page: ReactElement) {
+    return (
+      <Portfolio>
+        {page}
+      </Portfolio>
+    )
+}
