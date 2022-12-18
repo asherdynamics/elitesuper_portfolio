@@ -17,10 +17,10 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <span className='text-green-500'>My Portfolio</span>
+          Welcome to <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-sky-600'>My Portfolio</span>
         </h1>
         <div className='w-full mt-2'>
-          <h1 className="text-5xl text-center font-bold">Hi! 👋 I am <span className='text-yellow-300'>{name}</span>.</h1>
+          <h1 className="text-5xl text-center font-bold">Hi! 👋 I am <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-sky-600'>{name}</span>.</h1>
           <h1 className="text-2xl text-center font-bold mt-1">{shortBio}</h1>
         </div>
         <div className='w-full mt-2 inline-block md:flex justify-center text-center font-semibold'>
