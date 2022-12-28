@@ -1,14 +1,24 @@
 import React, {useState} from "react";
+import Head from 'next/head'
 import Link from "next/link";
+
+
+import { data } from '../../utils/data'
 
 export default function DefaultNavbar(){
 
     const [toggle, settoggle] = useState(false);
+    const {name} = data;
 
     const setMenuStat = () =>{
         settoggle(!toggle)
     }
     return(<>
+            <Head>
+                <title>{name}</title>
+                <meta name="description" content={name} />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
                 <div className="container flex flex-wrap items-center justify-between mx-auto">
                     <a href="https://flowbite.com/" className="flex items-center">
