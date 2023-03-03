@@ -1,4 +1,4 @@
 export const data = {
-    name : "Terrible Code Monster",
-    shortBio : "Full Stack Web Developer",
+    name : "DISCOVER WHAT'S POSSIBLE",
+    shortBio : "Brand Innovation",
 } 
